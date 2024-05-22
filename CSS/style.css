@@ -1,0 +1,158 @@
+:root{
+    --w:#fffffff0;
+    --g:#40A578;
+    --lg:#9dde8b;
+    --mg:#E6FF94;
+}
+body, h2{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.landing{
+    background-image: url('../media/food2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--g);
+} 
+header a{
+    text-decoration: none;
+    color:var(--lg);
+    min-width: 300px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    padding: 1em;
+    min-width: 300px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+    font-size: 1.25em;
+    padding: 1em;
+
+}
+nav a:hover{
+    color: var(--w);
+}
+
+header a  i, nav a i{
+    margin-right: .5em;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--mg);
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+
+.tagline2{
+    font-size: 2em;
+}
+
+.callus{
+    font-size: 2em;
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 18vw;
+    border-radius: 10px;
+    margin-top: 2em;
+    padding: 0.8em;
+    background-color: var(--g);
+    color: var(--w); 
+    font-size: 0.8em;  
+    border: 3px solid var(--mg);   
+}  
+.menu{
+    display: grid;
+    background: linear-gradient(to right,rgb(36, 36, 36), rgb(58, 58, 58));
+    color: var(--mg);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(36, 36, 36), rgb(58, 58, 58));
+    color: var(--w);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--g);
+    font-size: 2em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    padding: .7em;
+}
+
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row:span 2;
+}
+
+.location{
+    background: linear-gradient(to right,rgb(36, 36, 36), rgb(58, 58, 58));
+    color: var(--w);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.location h2{
+    color: var(--g);
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 350px;
+    font-weight: bold;
+}
+
+footer{
+    background: linear-gradient(to right,rgb(0, 0, 0), rgb(187, 197, 134));
+    color: var(--mg);
+    padding-left: 1em;
+}
